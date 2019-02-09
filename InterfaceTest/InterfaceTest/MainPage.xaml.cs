@@ -13,5 +13,10 @@ namespace InterfaceTest
         {
             InitializeComponent();
         }
+
+        private void ToolbarItem_OnActivated(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Content());
+        }
     }
 }
